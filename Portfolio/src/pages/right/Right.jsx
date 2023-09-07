@@ -1,0 +1,340 @@
+import {
+  Stack,
+  Typography,
+  Box,
+  Button,
+  Avatar,
+  FormControl,
+  TextField,
+} from "@mui/material";
+import Reveal from "../../utils/Reveal";
+import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import TimelineComponent from "../../components/Navbar/Timeline";
+import Skills from "../../components/Navbar/Skills";
+
+const Right = ({ refs }) => {
+  useEffect(() => {
+    emailjs.init("3_OEDQF2xdTH6sGY4"); // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+  }, []);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    console.log(form);
+
+    // Send the form data using EmailJS
+    emailjs.sendForm("service_d6vyuqr", "template_lxzewra", form).then(
+      function (response) {
+        console.log("SUCCESS!", response);
+        form.reset();
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+  };
+
+  return (
+    <Stack ref={refs.homeRef} gap={6} width="100%">
+      <Reveal>
+        <Stack
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          sx={{
+            minHeight: "620px",
+            borderRadius: "16px",
+            backgroundColor: "primary.main",
+            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+          }}
+        >
+          <Typography variant="h2" sx={{ fontWeight: "bold" }}>
+            I'm Kelvin Lau
+          </Typography>
+          <Typography>
+            A full stack software developer that enjoys making fun apps people
+            actually use.
+          </Typography>
+          <Stack direction="row" m={4} gap={4}>
+            <Button
+              variant="contained"
+              color="secondary"
+              disableRipple
+              sx={{ height: "50px", width: "200px", borderRadius: "16px" }}
+            >
+              <Typography fontWeight="bold">View Portfolio</Typography>
+            </Button>
+            <Button
+              variant="outlined"
+              color="secondary"
+              disableRipple
+              sx={{ height: "50px", width: "200px", borderRadius: "16px" }}
+            >
+              <Typography fontWeight="bold">Hire Me</Typography>
+            </Button>
+          </Stack>
+        </Stack>
+      </Reveal>
+
+      <Reveal>
+        <Stack
+          ref={refs.aboutRef}
+          sx={{
+            minHeight: "400px",
+            padding: "32px",
+            borderRadius: "16px",
+            backgroundColor: "background.paper",
+            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+          }}
+        >
+          <Typography
+            variant="h5"
+            component="h1"
+            sx={{
+              fontWeight: "bold",
+              color: "text.primary",
+            }}
+          >
+            About Me
+          </Typography>
+
+          <Box
+            height="5px"
+            width="20px"
+            ml={1}
+            sx={{ backgroundColor: "black" }}
+          ></Box>
+          <Box m={5}>
+            <Stack
+              alignItems="center"
+              justifyContent="center"
+              direction="row"
+              gap={3}
+            >
+              <Avatar
+                alt="Kelvin Lau"
+                src="src/assets/kelvinlau.jpg"
+                sx={{
+                  height: "150px",
+                  width: "150px",
+                  marginBottom: "14px",
+                }}
+              />
+              <Stack gap={3}>
+                <Typography fontWeight="500">
+                  I'm a Air Force veteran who's passionate about coding, rock
+                  climbing, and hockey. With 8 years of experience collaborating
+                  in international, multi-dimensional teams, I'm ready to
+                  contribute to your next project.
+                </Typography>
+                <Stack direction="row" gap={3}>
+                  <Stack>
+                    <Stack direction="row">
+                      <Typography fontWeight="bold" mr={1}>
+                        Name:
+                      </Typography>
+                      <Typography> Kelvin Lau</Typography>
+                    </Stack>
+                    <Stack direction="row">
+                      <Typography fontWeight="bold" mr={1}>
+                        Birthday:
+                      </Typography>
+                      <Typography>12 April, 1995</Typography>
+                    </Stack>
+                  </Stack>
+                  <Stack>
+                    <Stack direction="row">
+                      <Typography fontWeight="bold" mr={1}>
+                        Location:
+                      </Typography>
+                      <Typography>Sunnyvale, CA</Typography>
+                    </Stack>
+                    <Stack direction="row">
+                      <Typography fontWeight="bold" mr={1}>
+                        Email:
+                      </Typography>
+                      <Typography>crosby2987@gmail.com</Typography>
+                    </Stack>
+                  </Stack>
+                </Stack>
+                <Stack direction="row" gap={3}>
+                  <Button color="primary" variant="contained">
+                    Resume
+                  </Button>
+                  <Button color="primary" variant="outlined">
+                    Contact
+                  </Button>
+                </Stack>
+              </Stack>
+            </Stack>
+          </Box>
+        </Stack>
+      </Reveal>
+      <Reveal>
+        <Stack
+          ref={refs.skillsRef}
+          sx={{
+            minHeight: "250px",
+            padding: "32px",
+            borderRadius: "16px",
+            backgroundColor: "primary.main",
+            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+          }}
+        >
+          <Typography
+            variant="h5"
+            component="h1"
+            sx={{
+              fontWeight: "bold",
+              color: "text.primary",
+            }}
+          >
+            Skills
+          </Typography>
+          <Box
+            height="5px"
+            width="20px"
+            ml={1}
+            sx={{ backgroundColor: "secondary.main" }}
+          ></Box>
+          <Skills />
+        </Stack>
+      </Reveal>
+      <Reveal>
+        <Stack
+          ref={refs.experienceRef}
+          sx={{
+            minHeight: "500px",
+            padding: "32px",
+            borderRadius: "16px",
+            backgroundColor: "background.paper",
+            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+          }}
+        >
+          <Typography
+            variant="h5"
+            component="h1"
+            sx={{
+              fontWeight: "bold",
+              color: "text.primary",
+            }}
+          >
+            Experience
+          </Typography>
+
+          <Box
+            height="5px"
+            width="20px"
+            ml={1}
+            sx={{ backgroundColor: "black" }}
+          ></Box>
+          <TimelineComponent />
+        </Stack>
+      </Reveal>
+      <Reveal>
+        <Stack
+          ref={refs.projectRef}
+          sx={{
+            minHeight: "250px",
+            padding: "32px",
+            borderRadius: "16px",
+            backgroundColor: "primary.main",
+            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+          }}
+        >
+          <Typography
+            variant="h5"
+            component="h1"
+            sx={{
+              fontWeight: "bold",
+              color: "text.primary",
+            }}
+          >
+            Projects
+          </Typography>
+          <Box
+            height="5px"
+            width="20px"
+            ml={1}
+            sx={{ backgroundColor: "secondary.main" }}
+          ></Box>
+        </Stack>
+      </Reveal>
+      <Reveal>
+        <Stack
+          ref={refs.contactRef}
+          sx={{
+            minHeight: "500px",
+            padding: "32px",
+            borderRadius: "16px",
+            backgroundColor: "background.paper",
+            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+          }}
+        >
+          <Typography
+            variant="h5"
+            component="h1"
+            sx={{
+              fontWeight: "bold",
+              color: "text.primary",
+            }}
+          >
+            Contact
+          </Typography>
+
+          <Box
+            height="5px"
+            width="20px"
+            ml={1}
+            sx={{ backgroundColor: "black" }}
+          ></Box>
+          <form id="contact-form" onSubmit={handleSubmit}>
+            <FormControl
+              fullWidth
+              sx={{
+                marginTop: "2rem",
+                "& .MuiInputLabel-root": { color: "primary.main" },
+              }}
+            >
+              <TextField type="text" name="user_name" label="Name" fullWidth />
+            </FormControl>
+            <FormControl
+              fullWidth
+              sx={{
+                marginTop: "2rem",
+                "& .MuiInputLabel-root": { color: "primary.main" },
+              }}
+            >
+              <TextField
+                type="email"
+                name="user_email"
+                label="Email"
+                fullWidth
+              />
+            </FormControl>
+            <FormControl
+              fullWidth
+              sx={{
+                marginTop: "2rem",
+                "& .MuiInputLabel-root": { color: "primary.main" },
+              }}
+            >
+              <TextField label="Message" name="message" multiline rows={4} />
+            </FormControl>
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              sx={{ marginTop: "2rem", width: "100%" }}
+            >
+              Send
+            </Button>
+          </form>
+        </Stack>
+      </Reveal>
+    </Stack>
+  );
+};
+
+export default Right;
