@@ -18,9 +18,13 @@ const TimelineItem = ({ years, title, description, filled, height }) => {
             bgcolor: filled ? "primary.main" : "#fff",
           }}
         />
-        <Stack pl={4} spacing={2}>
+        <Stack pl={4} spacing={2} width={{ xs: "200px", sm: "100%" }}>
           {title && (
-            <Typography variant={{ xs: "h2", sm: "h5" }} lineHeight="100%">
+            <Typography
+              pr={3}
+              variant={{ xs: "h2", sm: "h5" }}
+              lineHeight="100%"
+            >
               {title}
             </Typography>
           )}

@@ -112,7 +112,7 @@ const Right = ({ refs }) => {
             <Stack
               alignItems="center"
               justifyContent="center"
-              direction={{ xs: "column", sm: "row" }}
+              direction={{ xs: "column", sm: "column", md: "row" }}
               gap={3}
             >
               <Avatar
