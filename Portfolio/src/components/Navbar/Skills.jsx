@@ -3,19 +3,28 @@ import { Box, Grid, Icon, Paper, Stack, Typography } from "@mui/material";
 
 const Item = ({ skill, imgUrl }) => {
   return (
-    <Paper sx={{ height: "150px", width: "200px", padding: "24px" }}>
+    <Paper
+      sx={{
+        height: { xs: "70px", sm: "150px" },
+        width: { xs: "120px", sm: "200px" },
+      }}
+    >
       <Stack height="100%" alignItems="center" justifyContent="center">
         <Icon
           sx={{
-            height: "50px",
-            width: "50px",
+            height: { xs: "30px", sm: "50px" },
+            width: { xs: "30px", sm: "50px" },
             transition: "transform 0.3s ease",
             "&:hover": { transform: "Scale(1.1)" },
           }}
         >
           <img style={{ width: "100%" }} src={imgUrl} />
         </Icon>
-        <Typography mt={2} fontWeight="bold">
+        <Typography
+          mt={2}
+          fontSize={{ xs: ".7rem", sm: "1rem" }}
+          fontWeight="bold"
+        >
           {skill}
         </Typography>
       </Stack>
@@ -26,7 +35,7 @@ const Item = ({ skill, imgUrl }) => {
 const Skills = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid justifyContent="center" container spacing={2}>
+      <Grid alignItems="center" justifyContent="center" container spacing={2}>
         <Grid item xs={3} s={3} m={3}>
           <Item skill={"Python"} imgUrl={"src/assets/python.png"} />
         </Grid>

@@ -20,11 +20,15 @@ const TimelineItem = ({ years, title, description, filled, height }) => {
         />
         <Stack pl={4} spacing={2}>
           {title && (
-            <Typography variant="h5" lineHeight="100%">
+            <Typography variant={{ xs: "h2", sm: "h5" }} lineHeight="100%">
               {title}
             </Typography>
           )}
-          {description && <Typography color="gray">{description}</Typography>}
+          {description && (
+            <Typography color="gray" fontSize="1rem">
+              {description}
+            </Typography>
+          )}
         </Stack>
       </Stack>
     </Stack>
@@ -33,7 +37,13 @@ const TimelineItem = ({ years, title, description, filled, height }) => {
 
 const TimelineComponent = () => {
   return (
-    <Stack width={600} minHeight={400} borderRadius={4} p={3}>
+    <Stack
+      width={600}
+      minHeight={400}
+      borderRadius={4}
+      mt={3}
+      p={{ xs: 0, sm: 3 }}
+    >
       <TimelineItem filled height={80} />
       <TimelineItem
         years={{ start: 2014, end: "Present" }}

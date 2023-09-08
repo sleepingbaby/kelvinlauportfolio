@@ -43,20 +43,23 @@ const Right = ({ refs }) => {
           alignItems="center"
           justifyContent="center"
           sx={{
-            minHeight: "620px",
+            minHeight: { xs: "500px", sm: "620px" },
             borderRadius: "16px",
             backgroundColor: "primary.main",
             boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
           }}
         >
-          <Typography variant="h2" sx={{ fontWeight: "bold" }}>
+          <Typography
+            variant="h2"
+            sx={{ fontSize: "3rem", fontWeight: "bold" }}
+          >
             I'm Kelvin Lau
           </Typography>
-          <Typography>
+          <Typography sx={{ fontSize: "1rem", textAlign: "center" }}>
             A full stack software developer that enjoys making fun apps people
             actually use.
           </Typography>
-          <Stack direction="row" m={4} gap={4}>
+          <Stack direction={{ xs: "column", sm: "row" }} m={4} gap={4}>
             <Button
               variant="contained"
               color="secondary"
@@ -105,24 +108,24 @@ const Right = ({ refs }) => {
             ml={1}
             sx={{ backgroundColor: "black" }}
           ></Box>
-          <Box m={5}>
+          <Box m={{ xs: "0", sm: "5" }}>
             <Stack
               alignItems="center"
               justifyContent="center"
-              direction="row"
+              direction={{ xs: "column", sm: "row" }}
               gap={3}
             >
               <Avatar
                 alt="Kelvin Lau"
                 src="src/assets/kelvinlau.jpg"
                 sx={{
-                  height: "150px",
-                  width: "150px",
+                  height: { xs: "75px", sm: "150px" },
+                  width: { xs: "75px", sm: "150px" },
                   marginBottom: "14px",
                 }}
               />
               <Stack gap={3}>
-                <Typography fontWeight="500">
+                <Typography fontWeight="500" sx={{ fontSize: "1rem" }}>
                   I'm a Air Force veteran who's passionate about coding, rock
                   climbing, and hockey. With 8 years of experience collaborating
                   in international, multi-dimensional teams, I'm ready to
@@ -130,13 +133,13 @@ const Right = ({ refs }) => {
                 </Typography>
                 <Stack direction="row" gap={3}>
                   <Stack>
-                    <Stack direction="row">
+                    <Stack direction={{ xs: "column", sm: "row" }}>
                       <Typography fontWeight="bold" mr={1}>
                         Name:
                       </Typography>
                       <Typography> Kelvin Lau</Typography>
                     </Stack>
-                    <Stack direction="row">
+                    <Stack direction={{ xs: "column", sm: "row" }}>
                       <Typography fontWeight="bold" mr={1}>
                         Birthday:
                       </Typography>
@@ -144,13 +147,13 @@ const Right = ({ refs }) => {
                     </Stack>
                   </Stack>
                   <Stack>
-                    <Stack direction="row">
+                    <Stack direction={{ xs: "column", sm: "row" }}>
                       <Typography fontWeight="bold" mr={1}>
                         Location:
                       </Typography>
                       <Typography>Sunnyvale, CA</Typography>
                     </Stack>
-                    <Stack direction="row">
+                    <Stack direction={{ xs: "column", sm: "row" }}>
                       <Typography fontWeight="bold" mr={1}>
                         Email:
                       </Typography>
@@ -158,7 +161,12 @@ const Right = ({ refs }) => {
                     </Stack>
                   </Stack>
                 </Stack>
-                <Stack direction="row" gap={3}>
+                <Stack
+                  direction="row"
+                  gap={3}
+                  alignItems="center"
+                  justifyContent="center"
+                >
                   <Button color="primary" variant="contained">
                     Resume
                   </Button>
