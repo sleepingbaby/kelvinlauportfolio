@@ -18,7 +18,6 @@ import {
   Person,
   Phone,
 } from "@mui/icons-material";
-import { useEffect } from "react";
 
 const Left = ({ refs }) => {
   const scrollToTop = () => {
@@ -152,27 +151,47 @@ const Left = ({ refs }) => {
           </List>
         </Box>
         <Stack direction="row">
-          <IconButton sx={{ width: "60px", height: "60px" }}>
-            <img
-              alt="linkedin"
-              src="src/assets/linkedin.png"
-              style={{ height: "100%" }}
-            />
-          </IconButton>
-          <IconButton sx={{ width: "60px", height: "60px" }}>
-            <img
-              alt="github"
-              src="src/assets/github.png"
-              style={{ height: "100%" }}
-            />
-          </IconButton>
-          <IconButton sx={{ width: "60px", height: "60px" }}>
-            <img
-              alt="instagram"
-              src="src/assets/instagram.png"
-              style={{ height: "100%" }}
-            />
-          </IconButton>
+          <a
+            href={"https://www.linkedin.com/in/kelvin-lau846/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton sx={{ width: "60px", height: "60px" }}>
+              <img
+                alt="linkedin"
+                src="src/assets/linkedin.png"
+                style={{ height: "100%" }}
+              />
+            </IconButton>
+          </a>
+
+          <a
+            href={"https://github.com/sleepingbaby"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton sx={{ width: "60px", height: "60px" }}>
+              <img
+                alt="github"
+                src="src/assets/github.png"
+                style={{ height: "100%" }}
+              />
+            </IconButton>
+          </a>
+
+          <a
+            href={"https://www.instagram.com/toolausy/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton sx={{ width: "60px", height: "60px" }}>
+              <img
+                alt="instagram"
+                src="src/assets/instagram.png"
+                style={{ height: "100%" }}
+              />
+            </IconButton>
+          </a>
         </Stack>
       </Stack>
     </Stack>

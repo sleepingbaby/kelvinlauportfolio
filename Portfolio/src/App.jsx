@@ -15,13 +15,12 @@ function App() {
   };
 
   const handleResize = () => {
-    setIsSmallScreen(window.innerWidth <= 1000); // Adjust the width value as needed
+    setIsSmallScreen(window.innerWidth <= 1000);
   };
 
-  // Add an event listener for window resize
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-    handleResize(); // Call the function initially to set the initial state
+    handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);
     };

@@ -12,18 +12,29 @@ import { useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import TimelineComponent from "../../components/Navbar/Timeline";
 import Skills from "../../components/Navbar/Skills";
+import Project from "../../components/Project";
 
 const Right = ({ refs }) => {
+  const scrollToProject = () => {
+    refs.projectRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToContact = () => {
+    refs.contactRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
-    emailjs.init("3_OEDQF2xdTH6sGY4"); // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+    emailjs.init("3_OEDQF2xdTH6sGY4");
   }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    console.log(form);
 
-    // Send the form data using EmailJS
     emailjs.sendForm("service_d6vyuqr", "template_lxzewra", form).then(
       function (response) {
         console.log("SUCCESS!", response);
@@ -53,7 +64,7 @@ const Right = ({ refs }) => {
             variant="h2"
             sx={{ fontSize: "3rem", fontWeight: "bold" }}
           >
-            I'm Kelvin Lau
+            I&apos;m Kelvin Lau
           </Typography>
           <Typography sx={{ fontSize: "1rem", textAlign: "center" }}>
             A full stack software developer that enjoys making fun apps people
@@ -63,6 +74,7 @@ const Right = ({ refs }) => {
             <Button
               variant="contained"
               color="secondary"
+              onClick={scrollToProject}
               disableRipple
               sx={{ height: "50px", width: "200px", borderRadius: "16px" }}
             >
@@ -71,6 +83,7 @@ const Right = ({ refs }) => {
             <Button
               variant="outlined"
               color="secondary"
+              onClick={scrollToContact}
               disableRipple
               sx={{ height: "50px", width: "200px", borderRadius: "16px" }}
             >
@@ -126,10 +139,10 @@ const Right = ({ refs }) => {
               />
               <Stack gap={3}>
                 <Typography fontWeight="500" sx={{ fontSize: "1rem" }}>
-                  I'm a Air Force veteran who's passionate about coding, rock
-                  climbing, and hockey. With 8 years of experience collaborating
-                  in international, multi-dimensional teams, I'm ready to
-                  contribute to your next project.
+                  I&apos;m a Air Force veteran who&apos;s passionate about
+                  coding, rock climbing, and hockey. With 8 years of experience
+                  collaborating in international, multi-dimensional teams,
+                  I&apos;m ready to contribute to your next project.
                 </Typography>
                 <Stack direction="row" gap={3}>
                   <Stack>
@@ -244,7 +257,7 @@ const Right = ({ refs }) => {
         <Stack
           ref={refs.projectRef}
           sx={{
-            minHeight: "250px",
+            minHeight: "500px",
             padding: "32px",
             borderRadius: "16px",
             backgroundColor: "primary.main",
@@ -267,6 +280,9 @@ const Right = ({ refs }) => {
             ml={1}
             sx={{ backgroundColor: "secondary.main" }}
           ></Box>
+          <Stack alignItems="center" justifyContent="center">
+            <Project />
+          </Stack>
         </Stack>
       </Reveal>
       <Reveal>

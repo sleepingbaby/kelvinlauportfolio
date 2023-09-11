@@ -1,4 +1,3 @@
-import { Scale } from "@mui/icons-material";
 import { Box, Grid, Icon, Paper, Stack, Typography } from "@mui/material";
 
 const Item = ({ skill, imgUrl }) => {
