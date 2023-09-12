@@ -1,10 +1,9 @@
 import Left from "./pages/left/Left";
 import { Stack } from "@mui/material";
 import Right from "./pages/right/Right";
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 
 function App() {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const refs = {
     homeRef: useRef(null),
     aboutRef: useRef(null),
@@ -18,8 +17,8 @@ function App() {
     <Stack
       direction="row"
       my={6}
-      mx={{ xs: 2, sm: 20 }}
-      spacing={6}
+      mx={{ xs: 2, sm: 2, md: 3, lg: 20, xl: 20 }}
+      spacing={{ xs: 0, sm: 0, md: 0, lg: 6, xl: 6 }}
       justifyContent="center"
       alignItems="center"
       sx={{

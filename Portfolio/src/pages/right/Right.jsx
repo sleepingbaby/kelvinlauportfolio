@@ -55,6 +55,7 @@ const Right = ({ refs }) => {
           justifyContent="center"
           sx={{
             minHeight: { xs: "500px", sm: "620px" },
+            width: "100%",
             borderRadius: "16px",
             backgroundColor: "primary.main",
             boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
@@ -70,7 +71,17 @@ const Right = ({ refs }) => {
             A full stack software developer that enjoys making fun apps people
             actually use.
           </Typography>
-          <Stack direction={{ xs: "column", sm: "row" }} m={4} gap={4}>
+          <Stack
+            direction={{
+              xs: "column",
+              sm: "column",
+              md: "column",
+              lg: "row",
+              xl: "row",
+            }}
+            m={4}
+            gap={4}
+          >
             <Button
               variant="contained"
               color="secondary"
@@ -125,7 +136,13 @@ const Right = ({ refs }) => {
             <Stack
               alignItems="center"
               justifyContent="center"
-              direction={{ xs: "column", sm: "column", md: "row" }}
+              direction={{
+                xs: "column",
+                sm: "column",
+                md: "column",
+                lg: "row",
+                xl: "row",
+              }}
               gap={3}
             >
               <Avatar
@@ -146,13 +163,29 @@ const Right = ({ refs }) => {
                 </Typography>
                 <Stack direction="row" gap={3}>
                   <Stack>
-                    <Stack direction={{ xs: "column", sm: "row" }}>
+                    <Stack
+                      direction={{
+                        xs: "column",
+                        sm: "column",
+                        md: "column",
+                        lg: "row",
+                        xl: "row",
+                      }}
+                    >
                       <Typography fontWeight="bold" mr={1}>
                         Name:
                       </Typography>
                       <Typography> Kelvin Lau</Typography>
                     </Stack>
-                    <Stack direction={{ xs: "column", sm: "row" }}>
+                    <Stack
+                      direction={{
+                        xs: "column",
+                        sm: "column",
+                        md: "column",
+                        lg: "row",
+                        xl: "row",
+                      }}
+                    >
                       <Typography fontWeight="bold" mr={1}>
                         Birthday:
                       </Typography>
@@ -160,13 +193,29 @@ const Right = ({ refs }) => {
                     </Stack>
                   </Stack>
                   <Stack>
-                    <Stack direction={{ xs: "column", sm: "row" }}>
+                    <Stack
+                      direction={{
+                        xs: "column",
+                        sm: "column",
+                        md: "column",
+                        lg: "row",
+                        xl: "row",
+                      }}
+                    >
                       <Typography fontWeight="bold" mr={1}>
                         Location:
                       </Typography>
                       <Typography>Sunnyvale, CA</Typography>
                     </Stack>
-                    <Stack direction={{ xs: "column", sm: "row" }}>
+                    <Stack
+                      direction={{
+                        xs: "column",
+                        sm: "column",
+                        md: "column",
+                        lg: "row",
+                        xl: "row",
+                      }}
+                    >
                       <Typography fontWeight="bold" mr={1}>
                         Email:
                       </Typography>
@@ -175,7 +224,13 @@ const Right = ({ refs }) => {
                   </Stack>
                 </Stack>
                 <Stack
-                  direction={{ xs: "column", sm: "column", md: "row" }}
+                  direction={{
+                    xs: "column",
+                    sm: "column",
+                    md: "column",
+                    lg: "row",
+                    xl: "row",
+                  }}
                   gap={3}
                   mr={7}
                   alignItems="center"
