@@ -2,7 +2,7 @@ import { useSpring, animated, useInView } from "@react-spring/web";
 
 const Reveal = ({ children }) => {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    once: true,
   });
 
   const animation = useSpring({

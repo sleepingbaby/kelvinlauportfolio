@@ -185,6 +185,7 @@ const Right = ({ refs }) => {
                     href={"assets/Resume.pdf"}
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                   >
                     <Button
                       color="primary"
