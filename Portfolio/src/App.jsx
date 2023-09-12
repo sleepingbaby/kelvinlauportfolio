@@ -14,17 +14,6 @@ function App() {
     contactRef: useRef(null),
   };
 
-  const handleResize = () => {
-    setIsSmallScreen(window.innerWidth <= 1000);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <Stack
       direction="row"
@@ -38,7 +27,7 @@ function App() {
         maxWidth: { xs: "100%" },
       }}
     >
-      {isSmallScreen ? null : <Left refs={refs} />}
+      <Left refs={refs} />
       <Right refs={refs} />
     </Stack>
   );

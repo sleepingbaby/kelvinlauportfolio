@@ -34,10 +34,10 @@ export const darkThemeOptions = {
     },
     background: {
       default: "#1a1a1a",
-      paper: "#d79ec8",
+      paper: "#f7f7f7",
     },
     text: {
-      primary: "#fff",
+      primary: "#000",
       secondary: "#041225",
       disabled: "#041225",
       hint: "#041225",
