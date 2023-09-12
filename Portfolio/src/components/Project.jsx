@@ -64,6 +64,7 @@ const Project = () => {
               href={"https://whizlist.biz/"}
               target="_blank"
               rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
               <Button
                 variant="contained"
@@ -78,6 +79,7 @@ const Project = () => {
               href={"https://github.com/sleepingbaby/whizlist"}
               target="_blank"
               rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
               <Button
                 variant="outlined"
@@ -145,6 +147,7 @@ const Project = () => {
               href={"https://streamable.com/8m7jms"}
               target="_blank"
               rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
               <Button
                 variant="contained"
@@ -160,6 +163,7 @@ const Project = () => {
               href={"https://github.com/sleepingbaby/WasteNot"}
               target="_blank"
               rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
               <Button
                 variant="outlined"

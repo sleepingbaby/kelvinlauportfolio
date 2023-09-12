@@ -55,6 +55,11 @@ const TimelineComponent = () => {
         description="Avionics Technician"
       />
       <TimelineItem
+        years={{ start: 2023, end: 2023 }}
+        title="Code Platoon"
+        description="Full Stack Software Engineer"
+      />
+      <TimelineItem
         years={{ start: 2021, end: 2023 }}
         title="ESO Fund"
         description="Chief of Staff"
