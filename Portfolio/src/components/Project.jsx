@@ -23,7 +23,7 @@ const Project = () => {
           height="100%"
         >
           <img
-            src="public/assets/whizlist.png"
+            src="assets/whizlist.png"
             style={{
               height: "100%",
               width: "103%",
@@ -104,7 +104,7 @@ const Project = () => {
           height="100%"
         >
           <img
-            src="public/assets/wastenot.png"
+            src="assets/wastenot.png"
             style={{
               height: "100%",
               width: "103%",

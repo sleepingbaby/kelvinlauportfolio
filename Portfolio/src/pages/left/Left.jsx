@@ -72,7 +72,7 @@ const Left = ({ refs }) => {
         <Stack height="30%" alignItems="flex-start">
           <Avatar
             alt="Kelvin Lau"
-            src="public/assets/kelvinlau.jpg"
+            src="assets/kelvinlau.jpg"
             sx={{
               height: "100px",
               width: "100px",
@@ -159,7 +159,7 @@ const Left = ({ refs }) => {
             <IconButton sx={{ width: "60px", height: "60px" }}>
               <img
                 alt="linkedin"
-                src="public/assets/linkedin.png"
+                src="assets/linkedin.png"
                 style={{ height: "100%" }}
               />
             </IconButton>
@@ -173,7 +173,7 @@ const Left = ({ refs }) => {
             <IconButton sx={{ width: "60px", height: "60px" }}>
               <img
                 alt="github"
-                src="public/assets/github.png"
+                src="assets/github.png"
                 style={{ height: "100%" }}
               />
             </IconButton>
@@ -187,7 +187,7 @@ const Left = ({ refs }) => {
             <IconButton sx={{ width: "60px", height: "60px" }}>
               <img
                 alt="instagram"
-                src="public/assets/instagram.png"
+                src="assets/instagram.png"
                 style={{ height: "100%" }}
               />
             </IconButton>

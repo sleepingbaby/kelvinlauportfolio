@@ -130,7 +130,7 @@ const Right = ({ refs }) => {
             >
               <Avatar
                 alt="Kelvin Lau"
-                src="public/assets/kelvinlau.jpg"
+                src="assets/kelvinlau.jpg"
                 sx={{
                   height: { xs: "75px", sm: "150px" },
                   width: { xs: "75px", sm: "150px" },
