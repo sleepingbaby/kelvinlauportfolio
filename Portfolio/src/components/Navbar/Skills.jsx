@@ -37,22 +37,22 @@ const Skills = () => {
     <Box mt={3} sx={{ flexGrow: 1 }}>
       <Grid alignItems="center" justifyContent="center" container spacing={2}>
         <Grid item xs={4}>
-          <Item skill={"Python"} imgUrl={"src/assets/python.png"} />
+          <Item skill={"Python"} imgUrl={"public/assets/python.png"} />
         </Grid>
         <Grid item xs={4}>
-          <Item skill={"Javascript"} imgUrl={"src/assets/javascript.png"} />
+          <Item skill={"Javascript"} imgUrl={"public/assets/javascript.png"} />
         </Grid>
         <Grid item xs={4}>
-          <Item skill={"React"} imgUrl={"src/assets/react.png"} />
+          <Item skill={"React"} imgUrl={"public/assets/react.png"} />
         </Grid>
         <Grid item xs={4}>
-          <Item skill={"Material UI"} imgUrl={"src/assets/mui.png"} />
+          <Item skill={"Material UI"} imgUrl={"public/assets/mui.png"} />
         </Grid>
         <Grid item xs={4}>
-          <Item skill={"PostgreSQL"} imgUrl={"src/assets/postgresql.png"} />
+          <Item skill={"PostgreSQL"} imgUrl={"public/assets/postgresql.png"} />
         </Grid>
         <Grid item xs={4}>
-          <Item skill={"Django"} imgUrl={"src/assets/django.png"} />
+          <Item skill={"Django"} imgUrl={"public/assets/django.png"} />
         </Grid>
       </Grid>
     </Box>
