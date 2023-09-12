@@ -175,15 +175,24 @@ const Right = ({ refs }) => {
                   </Stack>
                 </Stack>
                 <Stack
-                  direction="row"
+                  direction={{ xs: "column", sm: "column", md: "row" }}
                   gap={3}
+                  mr={7}
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <Button color="primary" variant="contained">
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    sx={{ width: "200px" }}
+                  >
                     Resume
                   </Button>
-                  <Button color="primary" variant="outlined">
+                  <Button
+                    color="primary"
+                    variant="outlined"
+                    sx={{ width: "200px" }}
+                  >
                     Contact
                   </Button>
                 </Stack>

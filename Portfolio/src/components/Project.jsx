@@ -54,7 +54,7 @@ const Project = () => {
             Material UI and Framer Motion.{" "}
           </Typography>
           <Stack
-            direction="row"
+            direction={{ xs: "column", sm: "column", md: "row" }}
             width="100%"
             spacing={3}
             alignItems="center"
@@ -69,7 +69,7 @@ const Project = () => {
                 variant="contained"
                 color="primary"
                 disableRipple
-                sx={{ borderRadius: "16px" }}
+                sx={{ width: "200px" }}
               >
                 Live Site
               </Button>
@@ -82,7 +82,7 @@ const Project = () => {
               <Button
                 variant="outlined"
                 color="primary"
-                sx={{ borderRadius: "16px" }}
+                sx={{ width: "200px" }}
               >
                 Code
               </Button>
@@ -135,7 +135,7 @@ const Project = () => {
             Technologies used were React, Material UI, and react-spring.{" "}
           </Typography>
           <Stack
-            direction="row"
+            direction={{ xs: "column", sm: "column", md: "row" }}
             width="100%"
             spacing={3}
             alignItems="center"
@@ -150,7 +150,7 @@ const Project = () => {
                 variant="contained"
                 color="primary"
                 disableRipple
-                sx={{ borderRadius: "16px" }}
+                sx={{ width: "200px" }}
               >
                 Preview
               </Button>
@@ -164,7 +164,7 @@ const Project = () => {
               <Button
                 variant="outlined"
                 color="primary"
-                sx={{ borderRadius: "16px" }}
+                sx={{ width: "200px" }}
               >
                 Code
               </Button>
