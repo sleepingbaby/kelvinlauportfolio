@@ -68,9 +68,12 @@ const Project = () => {
             >
               <Button
                 variant="contained"
-                color="primary"
                 disableRipple
-                sx={{ width: "200px" }}
+                sx={{
+                  width: "200px",
+                  backgroundColor: "#D65C1F",
+                  "&:hover": { backgroundColor: "#b14c1a" },
+                }}
               >
                 Live Site
               </Button>
@@ -84,7 +87,15 @@ const Project = () => {
               <Button
                 variant="outlined"
                 color="primary"
-                sx={{ width: "200px" }}
+                sx={{
+                  width: "200px",
+                  borderColor: "#D65C1F",
+                  color: "#D65C1F",
+                  "&:hover": {
+                    borderColor: "#b14c1a",
+                    backgroundColor: "rgba(240, 88, 41, 0.18)",
+                  },
+                }}
               >
                 Code
               </Button>
@@ -151,9 +162,12 @@ const Project = () => {
             >
               <Button
                 variant="contained"
-                color="primary"
                 disableRipple
-                sx={{ width: "200px" }}
+                sx={{
+                  width: "200px",
+                  backgroundColor: "#D65C1F",
+                  "&:hover": { backgroundColor: "#b14c1a" },
+                }}
               >
                 Preview
               </Button>
@@ -168,7 +182,15 @@ const Project = () => {
               <Button
                 variant="outlined"
                 color="primary"
-                sx={{ width: "200px" }}
+                sx={{
+                  width: "200px",
+                  borderColor: "#D65C1F",
+                  color: "#D65C1F",
+                  "&:hover": {
+                    borderColor: "#b14c1a",
+                    backgroundColor: "rgba(240, 88, 41, 0.18)",
+                  },
+                }}
               >
                 Code
               </Button>
