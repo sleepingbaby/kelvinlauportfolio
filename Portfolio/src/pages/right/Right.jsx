@@ -139,7 +139,7 @@ const Right = ({ refs }) => {
               />
               <Stack gap={3}>
                 <Typography fontWeight="500" sx={{ fontSize: "1rem" }}>
-                  I&apos;m a Air Force veteran who&apos;s passionate about
+                  I&apos;m an Air Force veteran who&apos;s passionate about
                   coding, rock climbing, and hockey. With 8 years of experience
                   collaborating in international, multi-dimensional teams,
                   I&apos;m ready to contribute to your next project.

@@ -155,6 +155,7 @@ const Left = ({ refs }) => {
             href={"https://www.linkedin.com/in/kelvin-lau846/"}
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
           >
             <IconButton sx={{ width: "60px", height: "60px" }}>
               <img
@@ -169,6 +170,7 @@ const Left = ({ refs }) => {
             href={"https://github.com/sleepingbaby"}
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
           >
             <IconButton sx={{ width: "60px", height: "60px" }}>
               <img
@@ -183,6 +185,7 @@ const Left = ({ refs }) => {
             href={"https://www.instagram.com/toolausy/"}
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
           >
             <IconButton sx={{ width: "60px", height: "60px" }}>
               <img
