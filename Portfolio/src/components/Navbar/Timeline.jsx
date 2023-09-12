@@ -20,11 +20,7 @@ const TimelineItem = ({ years, title, description, filled, height }) => {
         />
         <Stack pl={4} spacing={2} width={{ xs: "200px", sm: "100%" }}>
           {title && (
-            <Typography
-              pr={3}
-              variant={{ xs: "h2", sm: "h5" }}
-              lineHeight="100%"
-            >
+            <Typography pr={3} lineHeight="100%" variant="h5">
               {title}
             </Typography>
           )}
