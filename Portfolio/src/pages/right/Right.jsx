@@ -181,13 +181,20 @@ const Right = ({ refs }) => {
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <Button
-                    color="primary"
-                    variant="contained"
-                    sx={{ width: "200px" }}
+                  <a
+                    href={"assets/Resume.pdf"}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Resume
-                  </Button>
+                    <Button
+                      color="primary"
+                      variant="contained"
+                      sx={{ width: "200px" }}
+                    >
+                      Resume
+                    </Button>
+                  </a>
+
                   <Button
                     color="primary"
                     variant="outlined"
