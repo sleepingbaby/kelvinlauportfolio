@@ -154,7 +154,12 @@ const Right = ({ refs }) => {
                   marginBottom: "14px",
                 }}
               />
-              <Stack gap={3}>
+              <Stack
+                gap={3}
+                alignItems="center"
+                justifyContent="center"
+                textAlign="center"
+              >
                 <Typography fontWeight="500" sx={{ fontSize: "1rem" }}>
                   I&apos;m an Air Force veteran who&apos;s passionate about
                   coding, rock climbing, and hockey. With 8 years of experience
@@ -232,7 +237,6 @@ const Right = ({ refs }) => {
                     xl: "row",
                   }}
                   gap={3}
-                  mr={7}
                   alignItems="center"
                   justifyContent="center"
                 >
