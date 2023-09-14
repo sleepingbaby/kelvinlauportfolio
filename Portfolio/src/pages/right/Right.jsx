@@ -187,9 +187,9 @@ const Right = ({ refs }) => {
                       }}
                     >
                       <Typography fontWeight="bold" mr={1}>
-                        Birthday:
+                        Age:
                       </Typography>
-                      <Typography>12 April, 1995</Typography>
+                      <Typography>28</Typography>
                     </Stack>
                   </Stack>
                   <Stack>
