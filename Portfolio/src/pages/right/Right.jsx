@@ -71,6 +71,7 @@ const Right = ({ refs }) => {
             A full stack software developer that enjoys making fun apps people
             actually use.
           </Typography>
+
           <Stack
             direction={{
               xs: "column",
