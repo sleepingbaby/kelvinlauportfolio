@@ -260,6 +260,7 @@ const Right = ({ refs }) => {
                     color="primary"
                     variant="outlined"
                     sx={{ width: "200px" }}
+                    onClick={scrollToContact}
                   >
                     Contact
                   </Button>
