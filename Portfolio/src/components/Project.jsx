@@ -1,3 +1,4 @@
+import { GitHub } from "@mui/icons-material";
 import { Button, Stack, Typography } from "@mui/material";
 
 const Project = () => {
@@ -85,6 +86,7 @@ const Project = () => {
               style={{ textDecoration: "none" }}
             >
               <Button
+                startIcon={<GitHub />}
                 variant="outlined"
                 color="primary"
                 sx={{
@@ -180,6 +182,7 @@ const Project = () => {
               style={{ textDecoration: "none" }}
             >
               <Button
+                startIcon={<GitHub />}
                 variant="outlined"
                 color="primary"
                 sx={{
