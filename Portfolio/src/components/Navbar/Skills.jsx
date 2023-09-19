@@ -39,20 +39,22 @@ const Skills = () => {
         <Grid item xs={4}>
           <Item skill={"Python"} imgUrl={"assets/python.png"} />
         </Grid>
+
         <Grid item xs={4}>
           <Item skill={"Javascript"} imgUrl={"assets/javascript.png"} />
-        </Grid>
-        <Grid item xs={4}>
-          <Item skill={"React"} imgUrl={"assets/react.png"} />
         </Grid>
         <Grid item xs={4}>
           <Item skill={"Material UI"} imgUrl={"assets/mui.png"} />
         </Grid>
         <Grid item xs={4}>
-          <Item skill={"PostgreSQL"} imgUrl={"assets/postgresql.png"} />
+          <Item skill={"Django"} imgUrl={"assets/django.png"} />
         </Grid>
         <Grid item xs={4}>
-          <Item skill={"Django"} imgUrl={"assets/django.png"} />
+          <Item skill={"React"} imgUrl={"assets/react.png"} />
+        </Grid>
+
+        <Grid item xs={4}>
+          <Item skill={"PostgreSQL"} imgUrl={"assets/postgresql.png"} />
         </Grid>
       </Grid>
     </Box>
